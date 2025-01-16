@@ -8,6 +8,9 @@ Simple SQL tools to manage services/programs created for [ILEastic](https://gith
 -- Start the HELLOWORLD service
 call ileastic.start('ILEASTIC', 'HELLOWORLD');
 
+-- Start the HELLOWORLD service. Stop it first if it's already running
+call ileastic.start('ILEASTIC', 'HELLOWORLD', restartService=>'y');
+
 -- See the services that are running
 select * from ileastic.services;
 
