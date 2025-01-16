@@ -1,7 +1,7 @@
 
 ## ileastic_manage
 
-Simple SQL tools to manage services/programs created for ILEastic. Provides procedures to start and stop services, and a view to see which ILEastic services are running.
+Simple SQL tools to manage services/programs created for [ILEastic](https://github.com/sitemule/ILEastic). Provides procedures to start and stop services, and a view to see which ILEastic services are running.
 
 
 ```sql
@@ -22,6 +22,8 @@ call ileastic.stop('HELLOWORLD');
 - [ ] In the same manner as start, but show a list of objects/services that can be started in a certain library - perhaps even show if they're already running.
 
 ### How to build
+
+This assumes you already have [ILEastic](https://github.com/sitemule/ILEastic) installed already.
 
 I did not create a build script for this yet. Simplist way to build these SQL objects is with VS Code (or ACS even) with Code for IBM i (+ the database extension).
 
